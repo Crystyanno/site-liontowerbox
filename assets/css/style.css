@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+:root{
+    --background: #152026;
+    --background-white: #F2F2F2;
+    --text-color: #f2f2f2;
+    --bottom-red: #F20505;
+    --button-red1: #D90718;
+    --button-box: #731921;
+    --degrade: #F20505, #d90718;
+    --text-opacyt: #525252;
+  }
