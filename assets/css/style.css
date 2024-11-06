@@ -15,3 +15,171 @@
     --degrade: #F20505, #d90718;
     --text-opacyt: #525252;
   }
+
+  button.btn{
+    padding: 10px 25px;
+    background-color: var(--bottom-red);
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  button.btn:hover{
+    background-color: transparent;
+    color: var(--bottom-red);
+    border: 1px solid var(--bottom-red);
+  }
+
+  body{
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .wrapper{
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0px auto;
+    background-color: var(--background);
+  }
+
+  section.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 8%;
+    background-image: url('../images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .home .home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.7);
+    z-index: 1;
+  }
+
+  .home .main-navbar{
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    max-height: 80px;
+    top: 0;
+    left: 0;
+    padding: 0px 8%;
+    margin: 0px auto;
+    display: flex;
+    justify-content:space-between ;
+    background-color: transparent;
+    z-index: 100;
+    transition: all 0.3s;
+    margin: 25px;
+  }
+
+  .home .main-navbar .logo img{
+    width: 50px;
+    height: auto;
+  }
+
+  .home .main-navbar .nav-list{
+    list-style: none;
+  }
+
+  .home .main-navbar .nav-list li{
+    display: inline-block;
+    margin: 0px 15px;
+  }
+
+  .home .main-navbar .nav-list li a{
+    text-decoration: none;
+    color: var(--background-white);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition:  all 0.3s;
+  }
+
+  .home .main-navbar .nav-list li a:hover{
+    color: var(--bottom-red);
+  }
+
+  .home .main-navbar .hamburger-btn{
+    user-select: none;
+    cursor: pointer;
+    display: none;
+  }
+
+  .main-navbar .hamburger-btn span{
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: var(--background-white);
+    margin: 6px auto;
+    transition: all 0.3s;
+  }
+
+  .home .banner{
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    top: 80px;
+    color: var(--background-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .home .banner .banner-contents{
+    position: relative;
+    max-width: 700px;
+    top: -55px;
+    text-align: center;
+  }
+
+  .home .banner .banner-contents h2{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--background-white);
+  }
+
+  .home .banner .banner-contents h1{
+    color: var(--background-white);
+    margin: 20px 0px;
+    font-size: 52px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .home .banner .banner-contents p{
+    color: var(--text-color);
+  }
+
+  .home .banner .banner-contents .read-more-btn{
+    margin-top: 30px;
+    font-size: 17px;
+  }
+
+
+
+  /*  ==== Media Query ====  */
+
+  @media(max-width: 968px){}
+
+  @media(max-width: 868px){
+    
+  }
+
+  @media(max-width: 668px){}
+
+  @media(max-width: 568px){}
